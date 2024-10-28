@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 540,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 200
+          },
+          "nodeIndex": "data csv promomtion",
+          "nodeLineageTag": "59510369-5a8b-47b3-b3c1-8da89edf0cd0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 363.8,
+            "y": 0
+          },
+          "nodeIndex": "data csv Retrenchment",
+          "nodeLineageTag": "ba499d5d-2b60-4e65-b5cb-483fef40a63c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1108.8,
+            "y": 105
+          },
+          "nodeIndex": "HR Analytics Data",
+          "nodeLineageTag": "904e3aac-0990-4e71-952d-eb3dfdb13beb",
+          "size": {
+            "height": 211,
+            "width": 324
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 683.59999999999991,
+            "y": 243
+          },
+          "nodeIndex": "HR employee data",
+          "nodeLineageTag": "050c6a5d-bd36-4dd8-b8b0-505fceb0ee24",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1549.8,
+            "y": 0
+          },
+          "nodeIndex": "TableMesures",
+          "nodeLineageTag": "018954bf-15f8-42b2-8824-8805bb45720c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}
