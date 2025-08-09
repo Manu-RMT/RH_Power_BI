@@ -1,0 +1,380 @@
+table 'HR Analytics Data'
+	lineageTag: 904e3aac-0990-4e71-952d-eb3dfdb13beb
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 43a49b73-14fb-4f3e-8936-2dfe01328577
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attrition
+		dataType: string
+		lineageTag: 9cb0a5c8-8cf4-4d40-916c-a57f25e35841
+		summarizeBy: none
+		sourceColumn: Attrition
+
+		annotation SummarizationSetBy = Automatic
+
+	column BusinessTravel
+		dataType: string
+		lineageTag: d8ef1783-546e-46fa-bdb1-48ef62f005da
+		summarizeBy: none
+		sourceColumn: BusinessTravel
+
+		annotation SummarizationSetBy = Automatic
+
+	column DailyRate
+		dataType: int64
+		formatString: 0
+		lineageTag: 243b936d-ef1c-4713-8665-de2382a27bd3
+		summarizeBy: sum
+		sourceColumn: DailyRate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: 6b7ff7cb-518c-45b4-8bc6-76a5c27ddc63
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column DistanceFromHome
+		dataType: int64
+		formatString: 0
+		lineageTag: 01d289d1-48e0-4719-90e3-e419daec9ff9
+		summarizeBy: sum
+		sourceColumn: DistanceFromHome
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education
+		dataType: int64
+		formatString: 0
+		lineageTag: db1d2c00-df70-4b71-a98d-ba45e3062202
+		summarizeBy: sum
+		sourceColumn: Education
+
+		annotation SummarizationSetBy = Automatic
+
+	column EducationField
+		dataType: string
+		lineageTag: 4f708e83-f2a7-43e4-973f-2f2f8e2fa27a
+		summarizeBy: none
+		sourceColumn: EducationField
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeCount
+		dataType: int64
+		formatString: 0
+		lineageTag: f4561ced-48f7-4945-84af-2d5a2b59bfc0
+		summarizeBy: sum
+		sourceColumn: EmployeeCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ccd069d-30b4-4a88-9dc4-3a3c6bce78d4
+		summarizeBy: none
+		sourceColumn: EmployeeNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnvironmentSatisfaction
+		dataType: int64
+		formatString: 0
+		lineageTag: f2f65726-90f8-4681-ae54-6272da17b95e
+		summarizeBy: sum
+		sourceColumn: EnvironmentSatisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 8e447278-c69a-438f-bcef-48fdc2a4295d
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column HourlyRate
+		dataType: int64
+		formatString: 0
+		lineageTag: cc142183-7880-40ef-a487-fea69664f049
+		summarizeBy: sum
+		sourceColumn: HourlyRate
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobInvolvement
+		dataType: int64
+		formatString: 0
+		lineageTag: 39fdc4fc-85c1-4841-b86b-ea1ae34eed30
+		summarizeBy: sum
+		sourceColumn: JobInvolvement
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: d00e5d73-e1e7-4e10-93d5-eb65767b00ec
+		summarizeBy: sum
+		sourceColumn: JobLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobRole
+		dataType: string
+		lineageTag: ea34ea5e-c8c9-4d05-bdc1-ec96b000aaf8
+		summarizeBy: none
+		sourceColumn: JobRole
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobSatisfaction
+		dataType: int64
+		formatString: 0
+		lineageTag: e7e2f63a-32a8-431d-8dc1-6723063170a1
+		summarizeBy: sum
+		sourceColumn: JobSatisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaritalStatus
+		dataType: string
+		lineageTag: d33ef059-f843-4c48-98dd-ff05e4b56acf
+		summarizeBy: none
+		sourceColumn: MaritalStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthlyIncome
+		dataType: int64
+		formatString: 0
+		lineageTag: 79ae27b6-4727-434d-beec-ca04924cfa98
+		summarizeBy: sum
+		sourceColumn: MonthlyIncome
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthlyRate
+		dataType: int64
+		formatString: 0
+		lineageTag: b05474b0-10bf-4aa9-9896-b967ad1b84f7
+		summarizeBy: sum
+		sourceColumn: MonthlyRate
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumCompaniesWorked
+		dataType: int64
+		formatString: 0
+		lineageTag: 61f864ab-c9b3-4a90-92d2-35fb2ea7eaae
+		summarizeBy: sum
+		sourceColumn: NumCompaniesWorked
+
+		annotation SummarizationSetBy = Automatic
+
+	column Over18
+		dataType: string
+		lineageTag: 38cd18ec-dcf2-4aeb-9a1c-f87934af7e0a
+		summarizeBy: none
+		sourceColumn: Over18
+
+		annotation SummarizationSetBy = Automatic
+
+	column OverTime
+		dataType: string
+		lineageTag: b6ef849b-d496-4517-9b3a-a61579df0ca9
+		summarizeBy: none
+		sourceColumn: OverTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column PercentSalaryHike
+		dataType: int64
+		formatString: 0
+		lineageTag: d561f083-a789-4a36-b06e-c01ec1db9274
+		summarizeBy: sum
+		sourceColumn: PercentSalaryHike
+
+		annotation SummarizationSetBy = Automatic
+
+	column PerformanceRating
+		dataType: int64
+		formatString: 0
+		lineageTag: b36d62e4-c86d-4410-86dd-c23f88cc6399
+		summarizeBy: sum
+		sourceColumn: PerformanceRating
+
+		annotation SummarizationSetBy = Automatic
+
+	column RelationshipSatisfaction
+		dataType: int64
+		formatString: 0
+		lineageTag: d02f96a5-aee5-42c0-b634-490abf8ff120
+		summarizeBy: sum
+		sourceColumn: RelationshipSatisfaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column StandardHours
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c3e7685-fa26-4001-8219-0e61a1011044
+		summarizeBy: sum
+		sourceColumn: StandardHours
+
+		annotation SummarizationSetBy = Automatic
+
+	column StockOptionLevel
+		dataType: int64
+		formatString: 0
+		lineageTag: 39d1cd13-4019-4599-9c52-dbb0580970c6
+		summarizeBy: sum
+		sourceColumn: StockOptionLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalWorkingYears
+		dataType: int64
+		formatString: 0
+		lineageTag: 700af3d9-f17a-49d4-80cc-68269df7f6a6
+		summarizeBy: sum
+		sourceColumn: TotalWorkingYears
+
+		annotation SummarizationSetBy = Automatic
+
+	column TrainingTimesLastYear
+		dataType: int64
+		formatString: 0
+		lineageTag: d89b3485-5ebf-4b30-aae5-807d9f6bda2b
+		summarizeBy: sum
+		sourceColumn: TrainingTimesLastYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkLifeBalance
+		dataType: int64
+		formatString: 0
+		lineageTag: efbb9862-b466-4da5-9f5f-090bcd4d3ce1
+		summarizeBy: sum
+		sourceColumn: WorkLifeBalance
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearsAtCompany
+		dataType: int64
+		formatString: 0
+		lineageTag: c7d29354-d266-4b86-a4c8-fffce9e59905
+		summarizeBy: sum
+		sourceColumn: YearsAtCompany
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearsInCurrentRole
+		dataType: int64
+		formatString: 0
+		lineageTag: 4543d348-7bf2-42fb-aec1-5a8b6c8d82f9
+		summarizeBy: sum
+		sourceColumn: YearsInCurrentRole
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearsSinceLastPromotion
+		dataType: int64
+		formatString: 0
+		lineageTag: 33064267-04e7-491c-bc19-17f43d1d2ec9
+		summarizeBy: sum
+		sourceColumn: YearsSinceLastPromotion
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearsWithCurrManager
+		dataType: int64
+		formatString: 0
+		lineageTag: 3fe48601-78a9-4685-918a-136234740cb9
+		summarizeBy: sum
+		sourceColumn: YearsWithCurrManager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Promotion Status'
+		dataType: string
+		lineageTag: e6101c53-de67-4414-91da-7756ec592de4
+		summarizeBy: none
+		sourceColumn: Promotion Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Année de service'
+		dataType: string
+		lineageTag: 70f0029c-51de-46b7-9c3a-d0c7e26e4d6c
+		summarizeBy: none
+		sourceColumn: Année de service
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Niveau du métier'
+		dataType: string
+		lineageTag: 67900baa-7568-44c7-a95a-9d1fbcbd895a
+		summarizeBy: none
+		sourceColumn: Niveau du métier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Statut employée'
+		dataType: string
+		lineageTag: 62f22e4e-bd02-4c08-a217-59acdb6f0fd5
+		summarizeBy: none
+		sourceColumn: Statut employée
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Distance maison statut'
+		dataType: string
+		lineageTag: 6bdd13c8-fc4f-43dd-9543-aa3e189dcd4d
+		summarizeBy: none
+		sourceColumn: Distance maison statut
+
+		annotation SummarizationSetBy = Automatic
+
+	column MeteoEmployes
+		dataType: string
+		lineageTag: 7c6a28b0-367a-4b8f-b5f3-aa069a17fcdd
+		summarizeBy: none
+		sourceColumn: MeteoEmployes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'HR Analytics Data-49ba30b0-5bb3-45bd-86e1-769b6f503e3d' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(#"path Analytics Data"),[Delimiter=";", Columns=1, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Fractionner la colonne par délimiteur" = Table.SplitColumn(#"Type modifié", "Column1", Splitter.SplitTextByDelimiter("#(tab)", QuoteStyle.Csv), {"Column1.1", "Column1.2", "Column1.3", "Column1.4", "Column1.5", "Column1.6", "Column1.7", "Column1.8", "Column1.9", "Column1.10", "Column1.11", "Column1.12", "Column1.13", "Column1.14", "Column1.15", "Column1.16", "Column1.17", "Column1.18", "Column1.19", "Column1.20", "Column1.21", "Column1.22", "Column1.23", "Column1.24", "Column1.25", "Column1.26", "Column1.27", "Column1.28", "Column1.29", "Column1.30", "Column1.31", "Column1.32", "Column1.33", "Column1.34", "Column1.35"}),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Fractionner la colonne par délimiteur",{{"Column1.1", type text}, {"Column1.2", type text}, {"Column1.3", type text}, {"Column1.4", type text}, {"Column1.5", type text}, {"Column1.6", type text}, {"Column1.7", type text}, {"Column1.8", type text}, {"Column1.9", type text}, {"Column1.10", type text}, {"Column1.11", type text}, {"Column1.12", type text}, {"Column1.13", type text}, {"Column1.14", type text}, {"Column1.15", type text}, {"Column1.16", type text}, {"Column1.17", type text}, {"Column1.18", type text}, {"Column1.19", type text}, {"Column1.20", type text}, {"Column1.21", type text}, {"Column1.22", type text}, {"Column1.23", type text}, {"Column1.24", type text}, {"Column1.25", type text}, {"Column1.26", type text}, {"Column1.27", type text}, {"Column1.28", type text}, {"Column1.29", type text}, {"Column1.30", type text}, {"Column1.31", type text}, {"Column1.32", type text}, {"Column1.33", type text}, {"Column1.34", type text}, {"Column1.35", type text}}),
+				    #"En-têtes promus" = Table.PromoteHeaders(#"Type modifié1", [PromoteAllScalars=true]),
+				    #"Type modifié2" = Table.TransformColumnTypes(#"En-têtes promus",{{"Age", Int64.Type}, {"Attrition", type text}, {"BusinessTravel", type text}, {"DailyRate", Int64.Type}, {"Department", type text}, {"DistanceFromHome", Int64.Type}, {"Education", Int64.Type}, {"EducationField", type text}, {"EmployeeCount", Int64.Type}, {"EmployeeNumber", Int64.Type}, {"EnvironmentSatisfaction", Int64.Type}, {"Gender", type text}, {"HourlyRate", Int64.Type}, {"JobInvolvement", Int64.Type}, {"JobLevel", Int64.Type}, {"JobRole", type text}, {"JobSatisfaction", Int64.Type}, {"MaritalStatus", type text}, {"MonthlyIncome", Int64.Type}, {"MonthlyRate", Int64.Type}, {"NumCompaniesWorked", Int64.Type}, {"Over18", type text}, {"OverTime", type text}, {"PercentSalaryHike", Int64.Type}, {"PerformanceRating", Int64.Type}, {"RelationshipSatisfaction", Int64.Type}, {"StandardHours", Int64.Type}, {"StockOptionLevel", Int64.Type}, {"TotalWorkingYears", Int64.Type}, {"TrainingTimesLastYear", Int64.Type}, {"WorkLifeBalance", Int64.Type}, {"YearsAtCompany", Int64.Type}, {"YearsInCurrentRole", Int64.Type}, {"YearsSinceLastPromotion", Int64.Type}, {"YearsWithCurrManager", Int64.Type}}),
+				    #"Colonne conditionnelle ajoutée" = Table.AddColumn(#"Type modifié2", "Promotion Status", each if [YearsSinceLastPromotion] >= 10 then "Attente de promotion" else "Pas de promotion"),
+				    #"Colonne fusionnée insérée" = Table.AddColumn(#"Colonne conditionnelle ajoutée", "Année de service", each Text.Combine({Text.From([YearsAtCompany], "fr-FR"), " years"}), type text),
+				    #"Colonne fusionnée insérée1" = Table.AddColumn(#"Colonne fusionnée insérée", "Niveau du métier", each Text.Combine({"Niveau ", Text.From([JobLevel], "fr-FR")}), type text),
+				    #"Colonne conditionnelle ajoutée1" = Table.AddColumn(#"Colonne fusionnée insérée1", "Statut employée", each if [Age] = 50 then "Bientôt en retraite" else "En service"),
+				    #"Colonne conditionnelle ajoutée2" = Table.AddColumn(#"Colonne conditionnelle ajoutée1", "Distance maison statut", each if [DistanceFromHome] >= 20 then "Très loin" else if [DistanceFromHome] >= 10 then "Loin" else "Près"),
+				    #"Colonne conditionnelle ajoutée3" = Table.AddColumn(#"Colonne conditionnelle ajoutée2", "MeteoEmployes", each if [JobSatisfaction] = 4 then "Très bien" else if [JobSatisfaction] >= 2 then "Bien" else "Mauvais")
+				in
+				    #"Colonne conditionnelle ajoutée3"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

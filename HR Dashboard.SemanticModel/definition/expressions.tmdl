@@ -1,0 +1,28 @@
+expression 'path data promotion' = "C:\Users\manra\Documents\Projects\WorkSpace\RH\RH_Power_BI\Sources\data_promomtion.csv" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: c235d2f2-9a7e-449e-88fa-fa48709c7a7f
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression 'path data retrenchement' = "C:\Users\manra\Documents\Projects\WorkSpace\RH\RH_Power_BI\Sources\data_Retrenchment.csv" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: e46905e7-5bfb-461e-b0f7-12d3e0c4a936
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression 'path Analytics Data' = "C:\Users\manra\Documents\Projects\WorkSpace\RH\RH_Power_BI\Sources\HR Analytics Data.csv" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: 164153e9-042f-421a-b5e9-abdeaf0a5318
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression 'path HR Employee' = "C:\Users\manra\Documents\Projects\WorkSpace\RH\RH_Power_BI\Sources\HR employee data.csv" meta [IsParameterQuery=true, Type="Any", IsParameterQueryRequired=true]
+	lineageTag: a8ac4801-fa47-45b5-82e6-3711c289be36
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

@@ -1,0 +1,34 @@
+table 'data csv Retrenchment'
+	lineageTag: ba499d5d-2b60-4e65-b5cb-483fef40a63c
+
+	column 'Emplyee name'
+		dataType: string
+		lineageTag: 86821f65-25c7-456e-8d18-c47df2ce6d57
+		summarizeBy: none
+		sourceColumn: Emplyee name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Will be retrenched'
+		dataType: int64
+		formatString: 0
+		lineageTag: aebd5a85-37fb-4ce8-8f15-b5da047890bf
+		summarizeBy: sum
+		sourceColumn: Will be retrenched
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'data csv Retrenchment-bab656da-1c31-44af-92d1-5c24757cd387' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(#"path data retrenchement"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"Emplyee name", type text}, {"Will be retrenched", Int64.Type}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

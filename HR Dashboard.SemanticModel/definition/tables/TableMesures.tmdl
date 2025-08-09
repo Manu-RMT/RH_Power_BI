@@ -1,0 +1,103 @@
+table TableMesures
+	lineageTag: 018954bf-15f8-42b2-8824-8805bb45720c
+
+	measure 'Total Emp' = COUNTROWS('HR Analytics Data')
+		formatString: #,0
+		lineageTag: 3a2eddd7-1d7f-4da6-bc38-b41ba295c289
+
+	measure Male = CALCULATE(TableMesures[Total Emp],'HR Analytics Data'[Gender]="Male")
+		formatString: 0
+		lineageTag: 76787456-06f7-481d-a37e-259ce589ee1a
+
+	measure Female = CALCULATE(TableMesures[Total Emp],'HR Analytics Data'[Gender]="Female")
+		formatString: 0
+		lineageTag: 1bbeb8d2-5a52-4dfc-b9d9-839494686203
+
+	measure '% male' = DIVIDE([Male],TableMesures[Total Emp],0)
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 17815ec7-319b-4d77-b7a3-f85bf72952ed
+
+	measure '% female' = DIVIDE([Female],[Total Emp],0)
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: e6602445-f0dd-4022-87b8-4a0b0532a5fb
+
+	measure 'Attente de promotion' = CALCULATE([Total Emp],'HR Analytics Data'[Promotion Status]="Attente de promotion")
+		formatString: 0
+		lineageTag: 989b3f66-eebc-4243-b1aa-32d9b32172d2
+
+	measure 'Pas de promotion' = CALCULATE([Total Emp],'HR Analytics Data'[Promotion Status]="Pas de promotion")
+		formatString: 0
+		lineageTag: 9b110201-a8d6-463b-9cf3-acf210e1b838
+
+	measure '% attente de promotion' = DIVIDE([Attente de promotion],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 419d8fde-6965-4192-851f-6d739564207b
+
+	measure '% pas de promotion' = DIVIDE([Pas de promotion],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 0da3739c-b69b-416c-88d9-0ba8386547f8
+
+	measure 'employee bientot retraite' = CALCULATE([Total Emp], 'HR Analytics Data'[Statut employée] = "Bientôt en retraite" )
+		formatString: 0
+		lineageTag: 39a77fd2-d7ad-4949-a6d0-053c45febbe5
+
+	measure 'Employées en service' = CALCULATE([Total Emp], 'HR Analytics Data'[Statut employée] = "En Service" )
+		formatString: 0
+		lineageTag: 4b712b48-db61-497a-9c3f-0d3134b8f3ce
+
+	measure '% employee en service' = DIVIDE([Employées en service],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: e6e36a60-c91d-4e64-962f-a4d6f00e9aed
+
+	measure '% employee bientot retraire' = DIVIDE([employee bientot retraite],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 5bc90e32-43a4-45d4-952e-ef18d6fe51ff
+
+	measure 'Note basse employes' = CALCULATE([Total Emp],'HR Analytics Data'[PerformanceRating]=4)
+		formatString: 0
+		lineageTag: bb7b4ba7-b0dd-4baa-bbb9-d8744a532d6c
+
+	measure 'Note haute employes' = CALCULATE([Total Emp],'HR Analytics Data'[PerformanceRating]=3)
+		formatString: 0
+		lineageTag: 0feb4435-a38a-4c12-b6a6-560deed1d49a
+
+	measure '% Note basse emplyoyes' = DIVIDE([Note basse employes],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: f1673c2a-c065-4cae-8eb0-6aaa8a800e04
+
+	measure '% Note haute emplyoyes' = DIVIDE([Note haute employes],[Total Emp],0)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: ae9a6f8b-5357-4de9-82a6-9d29f15838c7
+
+	measure '% travel Frequently' = DIVIDE(CALCULATE([Total Emp],'HR Analytics Data'[BusinessTravel] = "Travel_Frequently"), [Total Emp])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 30b2d417-1cb5-487f-8180-9f6d164cdd53
+
+	measure '% travel Rarely' = DIVIDE(CALCULATE([Total Emp],'HR Analytics Data'[BusinessTravel] = "Travel_Rarely"), [Total Emp])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 16094f66-a059-49a7-bd44-9de47ea5a949
+
+	measure '% No travel' = DIVIDE(CALCULATE([Total Emp],'HR Analytics Data'[BusinessTravel] = "Non-Travel"), [Total Emp])
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 00fbb9a3-abd3-45b9-b761-72fc51f5e36e
+
+	measure 'AVG age' = DIVIDE(SUM('HR Analytics Data'[Age]),[Total Emp])
+		formatString: 0
+		lineageTag: c689cd19-dded-4e27-b707-10e17e666680
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	partition TableMesures-b3237e0d-f2dc-48d0-9d72-25784d799603 = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Colonne 1" = _t]),
+				    #"Type modifié" = Table.TransformColumnTypes(Source,{{"Colonne 1", type text}}),
+				    #"Colonnes supprimées" = Table.RemoveColumns(#"Type modifié",{"Colonne 1"})
+				in
+				    #"Colonnes supprimées"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

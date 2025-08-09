@@ -1,0 +1,18 @@
+relationship 171d521b-0810-429f-a30d-a8fbc879ad45
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'data csv promomtion'.'Emplyee name'
+	toColumn: 'data csv Retrenchment'.'Emplyee name'
+
+relationship 4c271432-e210-4b1b-b544-af3548086fba
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'HR employee data'.'Emplyee name'
+	toColumn: 'data csv Retrenchment'.'Emplyee name'
+
+relationship 1eb9b507-1db0-4f90-a3c9-4e45bcc8a521
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'HR employee data'.EmployeeNumber
+	toColumn: 'HR Analytics Data'.EmployeeNumber
+

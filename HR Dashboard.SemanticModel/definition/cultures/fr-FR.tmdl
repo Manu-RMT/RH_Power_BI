@@ -1,0 +1,126 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "hr_analytics_data.distance_maison_statut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "ConceptualProperty": "Distance maison statut"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Distance travail - maison": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "hr_analytics_data.jobrole": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "ConceptualProperty": "JobRole"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Poste": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tablemesures.attente_de_promotion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TableMesures",
+			          "ConceptualProperty": "Attente de promotion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promotion": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tablemesures.employee_bientot_retraite": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TableMesures",
+			          "ConceptualProperty": "employee bientot retraite"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "retraite": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Bientot retraité": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "tablemesures.total_emp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TableMesures",
+			          "ConceptualProperty": "Total Emp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Employés": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

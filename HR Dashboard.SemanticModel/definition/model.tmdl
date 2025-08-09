@@ -1,0 +1,25 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["data csv promomtion","data csv Retrenchment","HR Analytics Data","HR employee data","TableMesures","path data promotion","path data retrenchement","path Analytics Data","path HR Employee"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.145.1602.0 (25.07)+10647c9fa319b5e39936cdb21328038c371d1fe4
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'data csv promomtion'
+ref table DateTableTemplate_be7d3825-6cae-44b4-b470-4231c951ccd1
+ref table 'data csv Retrenchment'
+ref table 'HR Analytics Data'
+ref table 'HR employee data'
+ref table TableMesures
+
+ref cultureInfo fr-FR
+
