@@ -2,7 +2,7 @@ table TableMesures
 	lineageTag: 018954bf-15f8-42b2-8824-8805bb45720c
 
 	measure 'Total Emp' = COUNTROWS('HR Analytics Data')
-		formatString: #,0
+		formatString: 0
 		lineageTag: 3a2eddd7-1d7f-4da6-bc38-b41ba295c289
 
 	measure Male = CALCULATE(TableMesures[Total Emp],'HR Analytics Data'[Gender]="Male")
@@ -13,7 +13,7 @@ table TableMesures
 		formatString: 0
 		lineageTag: 1bbeb8d2-5a52-4dfc-b9d9-839494686203
 
-	measure '% male' = DIVIDE([Male],TableMesures[Total Emp],0)
+	measure '% male' = DIVIDE([Male],[Total Emp],0)
 		formatString: 0\ %;-0\ %;0\ %
 		lineageTag: 17815ec7-319b-4d77-b7a3-f85bf72952ed
 
@@ -25,8 +25,7 @@ table TableMesures
 		formatString: 0
 		lineageTag: 989b3f66-eebc-4243-b1aa-32d9b32172d2
 
-	measure 'Pas de promotion' = CALCULATE([Total Emp],'HR Analytics Data'[Promotion Status]="Pas de promotion")
-		formatString: 0
+	measure 'Pas de promotion' = FORMAT(CALCULATE([Total Emp],'HR Analytics Data'[Promotion Status]="Pas de promotion"),"#,0")
 		lineageTag: 9b110201-a8d6-463b-9cf3-acf210e1b838
 
 	measure '% attente de promotion' = DIVIDE([Attente de promotion],[Total Emp],0)
@@ -41,8 +40,7 @@ table TableMesures
 		formatString: 0
 		lineageTag: 39a77fd2-d7ad-4949-a6d0-053c45febbe5
 
-	measure 'Employées en service' = CALCULATE([Total Emp], 'HR Analytics Data'[Statut employée] = "En Service" )
-		formatString: 0
+	measure 'Employées en service' = FORMAT(CALCULATE([Total Emp], 'HR Analytics Data'[Statut employée] = "En Service" ),"#,0")
 		lineageTag: 4b712b48-db61-497a-9c3f-0d3134b8f3ce
 
 	measure '% employee en service' = DIVIDE([Employées en service],[Total Emp],0)
@@ -86,6 +84,19 @@ table TableMesures
 		lineageTag: c689cd19-dded-4e27-b707-10e17e666680
 
 		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure '% pas de promotion (reste)' = 1 -  DIVIDE([Pas de promotion],[Total Emp],0)
+		lineageTag: a3eb91c3-0797-42ac-9434-0c859a5b3d5e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '% attente de promotion (reste)' = 1 - DIVIDE([Attente de promotion],[Total Emp],0)
+		lineageTag: 1db8cbfc-0f30-4641-b07d-f08577415649
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Emp Format Special' = FORMAT([Total Emp],"#,0")
+		lineageTag: 41f5d970-c64b-4edc-af57-f2f5086c5675
 
 	partition TableMesures-b3237e0d-f2dc-48d0-9d72-25784d799603 = m
 		mode: import
