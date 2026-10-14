@@ -355,6 +355,31 @@ table 'HR Analytics Data'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Tranche d''âge' =
+			
+			SWITCH(
+			    TRUE(),
+			    'HR Analytics Data'[Age] < 30, "Moins de 30 ans",
+			    'HR Analytics Data'[Age] < 45, "30-44 ans",
+			    'HR Analytics Data'[Age] < 55, "45-54 ans",
+			    "55 ans et plus"
+			)
+		lineageTag: aba11a5b-6f81-4ec6-b593-17b7ca7bbefe
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Servcie et domaine'
+		lineageTag: a82bea60-1236-4a15-b8d2-5c616b279b7d
+
+		level Service
+			lineageTag: d22c722e-93cf-4d96-98ed-24a90c1dc96a
+			column: Department
+
+		level Poste
+			lineageTag: 060e9c5e-d539-46a6-90be-bb913c406184
+			column: JobRole
+
 	partition 'HR Analytics Data-49ba30b0-5bb3-45bd-86e1-769b6f503e3d' = m
 		mode: import
 		source =

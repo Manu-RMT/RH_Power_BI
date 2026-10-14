@@ -157,16 +157,6 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.485
 			          }
-			        },
-			        {
-			          "Poste": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -285,7 +275,17 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "promotion": {
+			          "Promotion": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Promotions": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -311,7 +311,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "retraite": {
+			          "Retraite": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -321,7 +321,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "Bientot retraité": {
+			          "Retraites": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -367,7 +367,17 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "Employés": {
+			          "Employé": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "NB emp": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2045,6 +2055,16 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Genre": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3131,6 +3151,16 @@ cultureInfo fr-FR
 			        {
 			          "time": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Heure Supp.": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4977,7 +5007,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "Employer": {
+			          "Employé": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5563,6 +5593,16 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.474
 			          }
+			        },
+			        {
+			          "%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -5907,6 +5947,16 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.599
 			          }
+			        },
+			        {
+			          "%": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -6057,6 +6107,16 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.482
 			          }
+			        },
+			        {
+			          "Frequement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -6103,25 +6163,45 @@ cultureInfo fr-FR
 			            },
 			            "Weight": 0.482
 			          }
+			        },
+			        {
+			          "Rarement": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
-			    "table_mesure.no_travel": {
+			    "table_mesure.travel_no": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "TableMesures",
-			          "ConceptualProperty": "% No travel"
+			          "ConceptualProperty": "% travel No"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "% no travel": {
+			          "% travel no": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "percentage no travel": {
+			          "% travel number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "percentage travel no": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6131,7 +6211,7 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "pct no travel": {
+			          "pct travel no": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -6141,23 +6221,13 @@ cultureInfo fr-FR
 			          }
 			        },
 			        {
-			          "% number travel": {
-			            "Type": "Noun",
+			          "Non": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "% no tourism": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.482
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -6337,9 +6407,382 @@ cultureInfo fr-FR
 			          }
 			        }
 			      ]
+			    },
+			    "HR_analytics_data.servcie_et_domaine.service": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "Hierarchy": "Servcie et domaine",
+			          "HierarchyLevel": "Service"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "svc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "package": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "repair": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "benefit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "servicing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "HR_analytics_data.servcie_et_domaine": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "Hierarchy": "Servcie et domaine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "servcie et domaine": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "HR_analytics_data.tranche_dâge": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "ConceptualProperty": "Tranche d'âge"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tranche d'âge": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "HR_analytics_data.servcie_et_domaine.poste": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HR Analytics Data",
+			          "Hierarchy": "Servcie et domaine",
+			          "HierarchyLevel": "Poste"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poste": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "table_mesure.heure_supp_yes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TableMesures",
+			          "ConceptualProperty": "Heure Supp Yes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "heure supp yes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "heure supp aye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "heure supp yea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "heure supp right": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "table_mesure.heure_supp_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TableMesures",
+			          "ConceptualProperty": "Heure Supp No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "heure supp no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "heure supp number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "HR_analytics_data_servcie_et_domaine_has_poste": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data.servcie_et_domaine": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.servcie_et_domaine"
+			          }
+			        },
+			        "HR_analytics_data.servcie_et_domaine.poste": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.servcie_et_domaine.poste"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data.servcie_et_domaine"
+			            },
+			            "Object": {
+			              "Role": "HR_analytics_data.servcie_et_domaine.poste"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servcie_et_domaines_have_poste"
+			        }
+			      ]
+			    },
+			    "HR_analytics_data_servcie_et_domaine_has_service": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data.servcie_et_domaine": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.servcie_et_domaine"
+			          }
+			        },
+			        "HR_analytics_data.servcie_et_domaine.service": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.servcie_et_domaine.service"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data.servcie_et_domaine"
+			            },
+			            "Object": {
+			              "Role": "HR_analytics_data.servcie_et_domaine.service"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "servcie_et_domaines_have_services"
+			        }
+			      ]
+			    },
+			    "HR_employee_data_has_HR_analytics_data": {
+			      "Binding": {
+			        "ConceptualEntity": "HR employee data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_employee_data": {
+			          "Target": {
+			            "Entity": "HR_employee_data"
+			          }
+			        },
+			        "HR_analytics_data": {
+			          "Target": {
+			            "Entity": "HR_analytics_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_employee_data"
+			            },
+			            "Object": {
+			              "Role": "HR_analytics_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_employee_data_have_HR_analytics_data"
+			        }
+			      ]
+			    },
+			    "HR_employee_data_has_data_csv_retrenchment": {
+			      "Binding": {
+			        "ConceptualEntity": "HR employee data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_employee_data": {
+			          "Target": {
+			            "Entity": "HR_employee_data"
+			          }
+			        },
+			        "data_csv_retrenchment": {
+			          "Target": {
+			            "Entity": "data_csv_retrenchment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_employee_data"
+			            },
+			            "Object": {
+			              "Role": "data_csv_retrenchment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_employee_data_have_data_csv_retrenchments"
+			        }
+			      ]
+			    },
+			    "HR_analytics_data_has_HR_employee_data": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data": {
+			          "Target": {
+			            "Entity": "HR_analytics_data"
+			          }
+			        },
+			        "HR_employee_data": {
+			          "Target": {
+			            "Entity": "HR_employee_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data"
+			            },
+			            "Object": {
+			              "Role": "HR_employee_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_analytics_data_have_HR_employee_data"
+			        }
+			      ]
+			    },
 			    "data_csv_retrenchment_has_HR_employee_data": {
 			      "Binding": {
 			        "ConceptualEntity": "data csv Retrenchment"
@@ -6436,6 +6879,138 @@ cultureInfo fr-FR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "data_csv_promomtions_have_data_csv_retrenchments"
+			        }
+			      ]
+			    },
+			    "HR_analytics_data_has_table_mesure_heure_supp_no": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data": {
+			          "Target": {
+			            "Entity": "HR_analytics_data"
+			          }
+			        },
+			        "table_mesure.heure_supp_no": {
+			          "Target": {
+			            "Entity": "table_mesure.heure_supp_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data"
+			            },
+			            "Object": {
+			              "Role": "table_mesure.heure_supp_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_analytics_data_have_heure_supp_no"
+			        }
+			      ]
+			    },
+			    "table_mesure_has_heure_supp_yes": {
+			      "Binding": {
+			        "ConceptualEntity": "TableMesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "table_mesure": {
+			          "Target": {
+			            "Entity": "table_mesure"
+			          }
+			        },
+			        "table_mesure.heure_supp_yes": {
+			          "Target": {
+			            "Entity": "table_mesure.heure_supp_yes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "table_mesure"
+			            },
+			            "Object": {
+			              "Role": "table_mesure.heure_supp_yes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "table_mesures_have_heure_supp_yeses"
+			        }
+			      ]
+			    },
+			    "HR_analytics_data_has_tranche_dâge": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data": {
+			          "Target": {
+			            "Entity": "HR_analytics_data"
+			          }
+			        },
+			        "HR_analytics_data.tranche_dâge": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.tranche_dâge"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data"
+			            },
+			            "Object": {
+			              "Role": "HR_analytics_data.tranche_dâge"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_analytics_data_have_tranche_dâges"
+			        }
+			      ]
+			    },
+			    "HR_analytics_data_has_servcie_et_domaine": {
+			      "Binding": {
+			        "ConceptualEntity": "HR Analytics Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HR_analytics_data": {
+			          "Target": {
+			            "Entity": "HR_analytics_data"
+			          }
+			        },
+			        "HR_analytics_data.servcie_et_domaine": {
+			          "Target": {
+			            "Entity": "HR_analytics_data.servcie_et_domaine"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HR_analytics_data"
+			            },
+			            "Object": {
+			              "Role": "HR_analytics_data.servcie_et_domaine"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HR_analytics_data_have_servcie_et_domaines"
 			        }
 			      ]
 			    },
@@ -6571,7 +7146,7 @@ cultureInfo fr-FR
 			        }
 			      ]
 			    },
-			    "HR_analytics_data_has_table_mesure_no_travel": {
+			    "HR_analytics_data_has_table_mesure_travel_no": {
 			      "Binding": {
 			        "ConceptualEntity": "HR Analytics Data"
 			      },
@@ -6582,9 +7157,9 @@ cultureInfo fr-FR
 			            "Entity": "HR_analytics_data"
 			          }
 			        },
-			        "table_mesure.no_travel": {
+			        "table_mesure.travel_no": {
 			          "Target": {
-			            "Entity": "table_mesure.no_travel"
+			            "Entity": "table_mesure.travel_no"
 			          }
 			        }
 			      },
@@ -6595,12 +7170,12 @@ cultureInfo fr-FR
 			              "Role": "HR_analytics_data"
 			            },
 			            "Object": {
-			              "Role": "table_mesure.no_travel"
+			              "Role": "table_mesure.travel_no"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HR_analytics_data_have__no_travel"
+			          "ID": "HR_analytics_data_have__travel_no"
 			        }
 			      ]
 			    },
@@ -7162,39 +7737,6 @@ cultureInfo fr-FR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "HR_employee_data_have_emplyee_names"
-			        },
-			        {
-			          "Verb": {
-			            "Subject": {
-			              "Role": "HR_employee_data.emplyee_name"
-			            },
-			            "Verbs": [
-			              {
-			                "Employ": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "HR_employee_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.75,
-			          "ID": "emplyee_names_Employ_HR_employee_data"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "HR_employee_data.emplyee_name"
-			            },
-			            "Object": {
-			              "Role": "HR_employee_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "emplyee_names_have_HR_employee_data"
 			        }
 			      ]
 			    },
@@ -8862,20 +9404,20 @@ cultureInfo fr-FR
 			        }
 			      ]
 			    },
-			    "HR_analytics_data_has_HR_employee_data": {
+			    "HR_analytics_data_servcie_et_domaine_service_has_HR_analytics_data_servcie_et_domaine_poste": {
 			      "Binding": {
 			        "ConceptualEntity": "HR Analytics Data"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "HR_analytics_data": {
+			        "HR_analytics_data.servcie_et_domaine.service": {
 			          "Target": {
-			            "Entity": "HR_analytics_data"
+			            "Entity": "HR_analytics_data.servcie_et_domaine.service"
 			          }
 			        },
-			        "HR_employee_data": {
+			        "HR_analytics_data.servcie_et_domaine.poste": {
 			          "Target": {
-			            "Entity": "HR_employee_data"
+			            "Entity": "HR_analytics_data.servcie_et_domaine.poste"
 			          }
 			        }
 			      },
@@ -8883,81 +9425,48 @@ cultureInfo fr-FR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "HR_analytics_data"
+			              "Role": "HR_analytics_data.servcie_et_domaine.service"
 			            },
 			            "Object": {
-			              "Role": "HR_employee_data"
+			              "Role": "HR_analytics_data.servcie_et_domaine.poste"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HR_analytics_data_have_HR_employee_data"
-			        }
-			      ]
-			    },
-			    "HR_employee_data_has_data_csv_retrenchment": {
-			      "Binding": {
-			        "ConceptualEntity": "HR employee data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "HR_employee_data": {
-			          "Target": {
-			            "Entity": "HR_employee_data"
-			          }
+			          "ID": "services_have_poste"
 			        },
-			        "data_csv_retrenchment": {
-			          "Target": {
-			            "Entity": "data_csv_retrenchment"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "HR_employee_data"
+			              "Role": "HR_analytics_data.servcie_et_domaine.poste"
 			            },
 			            "Object": {
-			              "Role": "data_csv_retrenchment"
+			              "Role": "HR_analytics_data.servcie_et_domaine.service"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HR_employee_data_have_data_csv_retrenchments"
-			        }
-			      ]
-			    },
-			    "HR_employee_data_has_HR_analytics_data": {
-			      "Binding": {
-			        "ConceptualEntity": "HR employee data"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "HR_employee_data": {
-			          "Target": {
-			            "Entity": "HR_employee_data"
-			          }
+			          "ID": "poste_have_services"
 			        },
-			        "HR_analytics_data": {
-			          "Target": {
-			            "Entity": "HR_analytics_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
-			              "Role": "HR_employee_data"
+			              "Role": "HR_analytics_data.servcie_et_domaine.poste"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
-			              "Role": "HR_analytics_data"
+			              "Role": "HR_analytics_data.servcie_et_domaine.service"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HR_employee_data_have_HR_analytics_data"
+			          "ID": "poste_are_in_services"
 			        }
 			      ]
 			    }

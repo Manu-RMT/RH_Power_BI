@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "47da743a60f57da4bb30",
   "position": {
     "x": 884.38549125484224,
-    "y": 399.37081817114688,
-    "z": 6000,
-    "height": 320.03756309425989,
+    "y": 303.8103063739876,
+    "z": 5000,
+    "height": 415.59807489141923,
     "width": 376.83296161521309,
-    "tabOrder": 6000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "donutChart",
@@ -32,9 +32,6 @@
               "displayName": "Distance travail - maison"
             }
           ]
-        },
-        "Tooltips": {
-          "projections": []
         },
         "Y": {
           "projections": [
@@ -349,6 +346,17 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
         }
       ],
       "label": [
@@ -358,6 +366,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }

@@ -75,7 +75,7 @@ table TableMesures
 		formatString: 0.00\ %;-0.00\ %;0.00\ %
 		lineageTag: 16094f66-a059-49a7-bd44-9de47ea5a949
 
-	measure '% No travel' = DIVIDE(CALCULATE([Total Emp],'HR Analytics Data'[BusinessTravel] = "Non-Travel"), [Total Emp])
+	measure '% travel No' = DIVIDE(CALCULATE([Total Emp],'HR Analytics Data'[BusinessTravel] = "Non-Travel"), [Total Emp])
 		formatString: 0.00\ %;-0.00\ %;0.00\ %
 		lineageTag: 00fbb9a3-abd3-45b9-b761-72fc51f5e36e
 
@@ -97,6 +97,17 @@ table TableMesures
 
 	measure 'Total Emp Format Special' = FORMAT([Total Emp],"#,0")
 		lineageTag: 41f5d970-c64b-4edc-af57-f2f5086c5675
+
+	measure 'Heure Supp No' = CALCULATE([Total Emp],'HR Analytics Data'[OverTime] = "No")
+		formatString: 0
+		lineageTag: 43b350a1-c4e4-42ba-a180-5e99dc6fedeb
+
+	column 'Heure Supp Yes' = CALCULATE([Total Emp],'HR Analytics Data'[OverTime] = "Yes")
+		formatString: 0
+		lineageTag: 24485828-2dc6-474b-a656-c21d4ac68ca2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
 
 	partition TableMesures-b3237e0d-f2dc-48d0-9d72-25784d799603 = m
 		mode: import

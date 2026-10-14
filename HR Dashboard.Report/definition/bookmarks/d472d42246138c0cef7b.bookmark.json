@@ -1,0 +1,126 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "navigation",
+  "name": "d472d42246138c0cef7b",
+  "options": {
+    "targetVisualNames": [
+      "12858f4ec3b3c3714ae6"
+    ]
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection",
+    "sections": {
+      "ReportSection": {
+        "visualContainers": {
+          "95cd538c453ad9b8a12a": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c0953c7796fefd96812d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "d2f2346f66d49792eae9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "36bc51e6b7639e9dcfe9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "90d763b88672ebf217c7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e90d7b4b5b038bdc66d7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TableMesures"
+                        }
+                      },
+                      "Property": "Total Emp Format Special"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {}
+            }
+          },
+          "12858f4ec3b3c3714ae6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "78bef57685a8525533b4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TableMesures"
+                        }
+                      },
+                      "Property": "Employées en service"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "TableMesures"
+                        }
+                      },
+                      "Property": "Employées en service"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
